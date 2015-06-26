@@ -195,7 +195,6 @@ function setDataEvaluationForm() {
 
     var strBodyHeadLeft = ""; // column 1,2
     var strBodyHeadRight = "";// column 7,8
-    var strBodyHeadRight2 = "";
     var strBodyDetail; // column 3,4,5,6
     var strSummaryRow = "";
 
@@ -254,6 +253,7 @@ function setDataEvaluationForm() {
 
                 // EDITBY PEEM
 
+
                 strBodyHeadRight = "<td rowspan='5' class='text-center'>" +
                     "<div id='divScore" + valueSubtopic.subtopicId + "' class='col-md-8 col-md-offset-2' style='padding: 0px;'>" +
                     "<input onkeypress='return isNumberEvaluate(event)' onchange='checkNumber(" + valueSubtopic.subtopicId + "," + indexSubtopic + ")' title='คะแนน' id='scoreSubId" + valueSubtopic.subtopicId + "' type='text' maxlength='5' class='form-control text-center' />" +
@@ -261,10 +261,6 @@ function setDataEvaluationForm() {
                     "</div>" +
                     "</td>" +
                     "<td rowspan='5' class='text-center'><textarea title='หมายเหตุ' id='textareaSubId" + valueSubtopic.subtopicId + "' class='form-control'></textarea></td>";
-
-                strBodyHeadRight2 = "<td rowspan='5' class='text-center'>" + scoreS + "</td>" +
-                    "<td rowspan='5' class='text-center'>" + noteS + "</td>";
-
                 $(dataDescription).each(function (indexDescription, valueDescription) {
                     if (valueDescription.subtopicId == valueSubtopic.subtopicId) {
                         var min, max, desc;
@@ -288,7 +284,7 @@ function setDataEvaluationForm() {
                             "<td class='text-center'>" + desc + "</td>";
                         if (firstCount == 0) {
                             maxInputScore[indexSubtopic] = valueDescription.max;
-                            strSummaryRow = strSummaryRow.concat(strBodyDetail).concat(strBodyHeadRight).concat(strBodyHeadRight2).concat(trClose);
+                            strSummaryRow = strSummaryRow.concat(strBodyDetail).concat(strBodyHeadRight).concat(trClose);
                             firstCount++;
                         } else {
                             strSummaryRow += trOpen.concat(strBodyDetail).concat(trClose);
