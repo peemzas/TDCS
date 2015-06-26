@@ -260,7 +260,9 @@ function setDataEvaluationForm() {
                     "<span id='spanScore" + valueSubtopic.subtopicId + "' aria-hidden='true'></span>" +
                     "</div>" +
                     "</td>" +
-                    "<td rowspan='5' class='text-center'><textarea title='หมายเหตุ' id='textareaSubId" + valueSubtopic.subtopicId + "' class='form-control'></textarea></td>";
+                    "<td rowspan='5' class='text-center'><textarea title='หมายเหตุ' id='textareaSubId" + valueSubtopic.subtopicId + "' class='form-control'></textarea></td>"+
+                    "<td rowspan='5' class='text-center'>" + scoreS + "</td>" +
+                    "<td rowspan='5' class='text-center'>" + noteS + "</td>";
                 $(dataDescription).each(function (indexDescription, valueDescription) {
                     if (valueDescription.subtopicId == valueSubtopic.subtopicId) {
                         var min, max, desc;
