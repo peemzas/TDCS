@@ -22,7 +22,6 @@
           <element id="library" level="project" name="Maven: javax.mail:mail:1.4.3" />
           <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
           <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.2.2" />
-          <element id="library" level="application" name="antlr-2.7.6" />
         </element>
       </element>
       <element id="directory" name="META-INF">
