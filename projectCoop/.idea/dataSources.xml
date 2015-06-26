@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="4112934203">
+    <data-source source="LOCAL" name="src:main:webapp:WEB-INF:classes:hibernate.cfg.xml" uuid="061d23e1-e6b6-4833-894d-b80efeb64244">
+      <driver-ref>oracle</driver-ref>
+      <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+      <jdbc-url>jdbc:oracle:thin:@172.16.0.32:1521:TWCMT1</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://C:\Users\l3eal2\IdeaProjects\test\src\main\webapp\WEB-INF\lib\xmlbeans-2.3.0.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

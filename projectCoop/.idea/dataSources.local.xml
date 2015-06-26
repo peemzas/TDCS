@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="src:main:webapp:WEB-INF:classes:hibernate.cfg.xml" uuid="061d23e1-e6b6-4833-894d-b80efeb64244">
+      <user-name>scott</user-name>
+      <user-password>dfdedfc3dfcddfcfdfd8</user-password>
+    </data-source>
+  </component>
+</project>
