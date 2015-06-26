@@ -3,11 +3,13 @@
  */
 
 var subTopicId = [];
+var sumScoreS = 0;
+var checkHaveScoreS = true;
 var checkInputScore = [];
 var maxInputScore = [];
 var minInputScore = [];
 var countAdd = 0;
-
+var userId = "" // EDIT BY PEEM
 $(document).ready(function () {
     $("#evaluation").attr('class', 'active');
     if (status == 'user') {
@@ -127,6 +129,19 @@ $(document).ready(function () {
         }
     }
 
+    //EDIT BY PEEM
+    $("#selectStudentForEvaluation").change(function () {
+
+        if (status == 'user') {
+            userId = "";
+        } else {
+            userId = $("#selectStudentForEvaluation").val();
+        }
+        $(".dv-background").show();
+        setDataEvaluationForm();
+        $(".dv-background").hide();
+    });
+    //EDIT BY PEEM
 
     $("#disEvaluation").click(function () {
         for (var i = 0; i < subTopicId.length; i++) {
@@ -261,8 +276,8 @@ function setDataEvaluationForm() {
                     "</div>" +
                     "</td>" +
                     "<td rowspan='5' class='text-center'><textarea title='หมายเหตุ' id='textareaSubId" + valueSubtopic.subtopicId + "' class='form-control'></textarea></td>"+
-                    "<td rowspan='5' class='text-center'>" + scoreS + "</td>" +
-                    "<td rowspan='5' class='text-center'>" + noteS + "</td>";
+                    "<td rowspan='5' class='text-center'>"+scoreS+"</td>" +
+                    "<td rowspan='5' class='text-center'>"+noteS+"</td>";
                 $(dataDescription).each(function (indexDescription, valueDescription) {
                     if (valueDescription.subtopicId == valueSubtopic.subtopicId) {
                         var min, max, desc;
