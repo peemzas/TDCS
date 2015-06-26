@@ -228,7 +228,7 @@
                             <th rowspan="2" class="text-center" style="vertical-align: middle;" width="15%">หัวข้อ</th>
                             <th rowspan="2" class="text-center" style="vertical-align: middle;" width="15%">หัวข้อย่อย</th>
                             <th rowspan="1" colspan="2" class="text-center">คะแนน</th>
-                            <th rowspan="2" class="text-center" style="vertical-align: middle;" width="10%">เกรด</th>
+                            <th rowspan="2" class="text-center" style="vertical-align: middle;" width="5%">เกรด</th>
                             <th rowspan="2" class="text-center" style="vertical-align: middle;" width="30%">รายละเอียด</th>
                             <c:if test="${status == 'user'}">
                                 <th rowspan="1" colspan="2" class="text-center" width="30%">นักศึกษา</th>
@@ -242,10 +242,10 @@
                             <c:if test="${status == 'staff'}">
                                 <th rowspan="1" colspan="1" class="text-center">ต่ำสุด</th>
                                 <th rowspan="1" colspan="1" class="text-center">สูงสุด</th>
-                                <th rowspan="1" colspan="1" class="text-center">กรอกคะแนน</th>
-                                <th rowspan="1" colspan="1" class="text-center">หมายเหตุ</th>
+                                <th rowspan="1" colspan="1" class="text-center" width="10%">กรอกคะแนน</th>
+                                <th rowspan="1" colspan="1" class="text-center" width="15%">หมายเหตุ</th>
                                 <th rowspan="1" colspan="1" class="text-center">คะแนน</th>
-                                <th rowspan="1" colspan="1" class="text-center">หมายเหตุ</th>
+                                <th rowspan="1" colspan="1" class="text-center" width="15%">หมายเหตุ</th>
                             </c:if>
                             <c:if test="${status == 'user'}">
                                 <th rowspan="1" colspan="1" class="text-center">ต่ำสุด</th>
