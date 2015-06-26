@@ -110,19 +110,21 @@
             </div>
 
             <!-- START PEEM'S EDIT-->
-            <div class="row form-group">
-                <div class="col-md-12" style="padding: 0;">
-                    <label for="sStaff" class="col-md-2 control-label"><small>พนักงานที่ปรึกษา</small></label>
-                    <div class="col-md-10">
-                        <select id="sStaff" class="form-control" data-width="100%">
-                            <option value="">โปรดเลือกพนักงานที่ปรึกษา</option>
-                            <c:forEach var="staff" items="${listUser}">
-                                <option value="${staff.userId}">${staff.thFname}</option>
-                            </c:forEach>
-                        </select>
+            <c:if test="${status == 'admin'}">
+                <div class="row form-group">
+                    <div class="col-md-12" style="padding: 0;">
+                        <label for="sStaff" class="col-md-2 control-label"><small>พนักงานที่ปรึกษา</small></label>
+                        <div class="col-md-10">
+                            <select id="sStaff" class="form-control" data-width="100%">
+                                <option value="">โปรดเลือกพนักงานที่ปรึกษา</option>
+                                <c:forEach var="staff" items="${listUser}">
+                                    <option value="${staff.userId}">${staff.thFname}</option>
+                                </c:forEach>
+                            </select>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </c:if>
             <!-- END PEEM'S EDIT -->
 
             <div class="col-md-10 col-md-offset-1">

@@ -54,6 +54,7 @@ $(document).ready(function () {
                         'data-sort-order="desc">' +
                         '<thead class="bg-primary">' +
                         '<tr>' +
+                        '<th data-field="viewData" data-align="center">ดูข้อมูล</th>' +
                         '<th data-field="empId" data-align="center" data-sortable="true">รหัสนักศึกษา</th>' +
                         '<th data-field="thFname" data-align="center" data-sortable="true">ชื่อ-นามสกุล</th>' +
                         '<th data-field="university" data-align="center" data-sortable="true">สถาบัน</th>' +
@@ -77,6 +78,7 @@ $(document).ready(function () {
                         'data-sort-order="desc">' +
                         '<thead class="bg-primary">' +
                         '<tr>' +
+                        '<th data-field="viewData" data-align="center">ดูข้อมูล</th>' +
                         '<th data-field="empId" data-align="center" data-sortable="true">รหัสนักศึกษา</th>' +
                         '<th data-field="thFname" data-align="center" data-sortable="true">ชื่อ-นามสกุล</th>' +
                         '<th data-field="university" data-align="center" data-sortable="true">สถาบัน</th>' +
@@ -141,8 +143,6 @@ $(document).ready(function () {
             async: false
         }).responseText;
 
-        console.log(data);
-
         if (data != "") {
             $('#sResult').empty();
             data2 = JSON.parse(data);
@@ -171,6 +171,7 @@ $(document).ready(function () {
             $("#alertMess").hide();
             $("#alertMess").slideDown();
         }
+        console.log(data2);
     }
 
     $("#cancel").click(function () {
