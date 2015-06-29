@@ -36,7 +36,7 @@ public class Apprentice {
 
     @Override
     public String toString() {
-        return "Apprentice{" +
+        return "Aaaaapprentice{" +
                 "aptId=" + aptId +
                 ", aptName='" + aptName + '\'' +
                 '}';
