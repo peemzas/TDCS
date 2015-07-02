@@ -12,7 +12,7 @@
 <div class="row">
     <c:if test="${status == 'admin'}">
         <script type="text/javascript" src="<c:url value="/resources/js/pageScript/evaluationAdmin.js" />"></script>
-        <h3 class="h3">เพิ่มแบบประเมินนนนนนนนนนนนนนนนนนนนนนน</h3>
+        <h3 class="h3">เพิ่มแบบประเมิน</h3>
     </c:if>
     <c:if test="${status == 'user'}">
         <script type="text/javascript" src="<c:url value="/resources/js/pageScript/evaluation.js" />"></script>
