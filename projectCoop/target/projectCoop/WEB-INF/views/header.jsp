@@ -74,6 +74,7 @@
                                     <c:if test="${status == 'user'}">ประเมินผล</c:if>
                                 </a>
                             </li>
+
                             <li>
                                 <a href="/TDCS/viewevaluate.html">
                                     ดูผลการประเมิน
@@ -92,6 +93,32 @@
                 <%--<a href="/TDCS/evaluation.html">ประเมินนักศึกษา</a>--%>
                 <%--</li>--%>
                 <%--</c:if>--%>
+
+                <%--/////////////Start Online Exam by JOKE /////////////--%>
+                <c:if test="${status == 'user' || status == 'staff'}">
+                    <li id="on_exam" class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            จัดการข้อสอบออนไลน์
+
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="/TDCS/evaluation.html">
+                                    <c:if test="${status == 'staff'}">สร้างข้อสอบ</c:if>
+                                    <c:if test="${status == 'user'}">ทำข้อสอบ</c:if>
+
+                                </a>
+                                <a href="/TDCS/evaluation.html">
+
+                                    <c:if test="${status == 'staff'}">ตรวจข้อสอบ</c:if>
+                                    <c:if test="${status == 'user'}">แสดงผลสอบ</c:if>
+                                </a>
+                        </ul>
+                            </li>
+
+
+                </c:if>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -100,6 +127,11 @@
         </div>
         <!-- /.navbar-collapse -->
     </div>
+
+
+
+
+
 </nav>
 
 <script>
